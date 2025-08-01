@@ -4,7 +4,7 @@ resource "aws_cloudfront_origin_access_control" "oac" {
   name                              = "react-site-oac"
   description                       = "OAC for React site"
   origin_access_control_origin_type = "s3"
-  signing_behavior                  = "never"
+  signing_behavior                  = "always"
   signing_protocol                  = "sigv4"
 }
 
